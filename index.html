@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Brunno Falcão</title>
+<meta name="description" content="Empresário, palestrante e autor best-seller. CEO da Science Play. Referência em posicionamento para médicos e nutricionistas.">
+<meta property="og:title" content="Brunno Falcão">
+<meta property="og:description" content="Empresário, palestrante e autor best-seller. CEO da Science Play.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0C0B0A;
+    --bg-card: #151413;
+    --bg-card-hover: #1A1918;
+    --gold: #C8A96E;
+    --gold-light: #D4BC8A;
+    --gold-soft: rgba(200,169,110,0.08);
+    --gold-glow: rgba(200,169,110,0.15);
+    --text: #E8E4DF;
+    --text-secondary: #9B9590;
+    --text-dim: #6B6560;
+    --white: #FAFAF8;
+    --border: rgba(200,169,110,0.12);
+    --radius: 16px;
+    --radius-sm: 12px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  .ambient {
+    position: fixed; top: 0; left: 0; right: 0; height: 100vh;
+    pointer-events: none; z-index: 0;
+    background: 
+      radial-gradient(ellipse 60% 40% at 50% 0%, rgba(200,169,110,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 50% at 80% 20%, rgba(180,140,80,0.03) 0%, transparent 60%);
+  }
+
+  .container {
+    position: relative; z-index: 1;
+    max-width: 480px; margin: 0 auto; padding: 0 20px 60px;
+  }
+
+  /* ── HERO ── */
+  .hero { text-align: center; padding: 48px 0 36px; }
+
+  .avatar-wrapper { position: relative; display: inline-block; margin-bottom: 24px; }
+
+  .avatar-ring {
+    width: 120px; height: 120px; border-radius: 50%; padding: 3px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
+    animation: ringPulse 4s ease-in-out infinite;
+  }
+  @keyframes ringPulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
+
+  .avatar {
+    width: 100%; height: 100%; border-radius: 50%;
+    object-fit: cover; border: 3px solid var(--bg); display: block;
+  }
+
+  .verified-badge {
+    position: absolute; bottom: 4px; right: 4px;
+    width: 28px; height: 28px; background: var(--gold);
+    border-radius: 50%; border: 3px solid var(--bg);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .verified-badge svg { width: 14px; height: 14px; fill: var(--bg); }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px; font-weight: 600; color: var(--white);
+    letter-spacing: 0.02em; margin-bottom: 8px;
+  }
+
+  .hero .tagline {
+    font-size: 13px; font-weight: 400; color: var(--text-secondary);
+    line-height: 1.5; max-width: 320px; margin: 0 auto 20px;
+  }
+  .hero .tagline strong { color: var(--gold-light); font-weight: 500; }
+
+  .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 24px; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 6px 12px; background: var(--gold-soft);
+    border: 1px solid var(--border); border-radius: 100px;
+    font-size: 11px; font-weight: 500; color: var(--gold-light);
+    letter-spacing: 0.03em; white-space: nowrap;
+  }
+  .badge svg { width: 12px; height: 12px; fill: var(--gold); flex-shrink: 0; }
+
+  .social-row { display: flex; justify-content: center; gap: 12px; }
+
+  .social-btn {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: var(--bg-card); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: var(--transition);
+  }
+  .social-btn:hover, .social-btn:active {
+    background: var(--gold-soft); border-color: var(--gold); transform: scale(1.05);
+  }
+  .social-btn svg { width: 18px; height: 18px; fill: var(--text-secondary); transition: var(--transition); }
+  .social-btn:hover svg, .social-btn:active svg { fill: var(--gold); }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 32px; }
+
+  .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 14px; padding-left: 4px;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  /* ── BESTSELLER HERO CARD ── */
+  .bestseller-card {
+    display: block; text-decoration: none; color: inherit;
+    background: linear-gradient(135deg, #1A1610 0%, #151413 50%, #12110F 100%);
+    border: 1px solid rgba(200,169,110,0.25);
+    border-radius: var(--radius); overflow: hidden;
+    transition: var(--transition); margin-bottom: 12px; position: relative;
+  }
+  .bestseller-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+  }
+  .bestseller-card:hover, .bestseller-card:active {
+    border-color: rgba(200,169,110,0.45); transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(200,169,110,0.12);
+  }
+
+  .bestseller-inner { display: flex; gap: 16px; padding: 20px; align-items: center; }
+
+  .bestseller-img {
+    width: 110px; flex-shrink: 0; border-radius: 8px;
+    overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .bestseller-img img { width: 100%; display: block; }
+
+  .bestseller-content { flex: 1; min-width: 0; }
+
+  .bestseller-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px;
+    background: linear-gradient(135deg, rgba(200,169,110,0.2), rgba(200,169,110,0.1));
+    border: 1px solid rgba(200,169,110,0.3); border-radius: 100px;
+    font-size: 9px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+  }
+
+  .bestseller-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 700; color: var(--white);
+    line-height: 1.15; margin-bottom: 6px;
+  }
+
+  .bestseller-content .bs-subtitle {
+    font-size: 12px; color: var(--text-secondary);
+    line-height: 1.4; margin-bottom: 10px;
+  }
+
+  .bestseller-ranks { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .rank-item {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 10px; font-weight: 600; color: var(--gold-light);
+    letter-spacing: 0.02em;
+  }
+
+  .rank-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px; font-weight: 700; color: var(--gold);
+  }
+
+  /* ── WEBINAR CARDS ── */
+  .webinar-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+    transition: var(--transition); margin-bottom: 12px;
+  }
+  .webinar-card:hover, .webinar-card:active {
+    border-color: rgba(200,169,110,0.3); transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(200,169,110,0.08);
+  }
+
+  .webinar-body { padding: 20px; }
+
+  .webinar-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+
+  .webinar-type {
+    font-size: 9px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--bg);
+    background: var(--gold); padding: 3px 8px; border-radius: 4px;
+  }
+
+  .webinar-price { font-size: 11px; font-weight: 600; color: var(--text-secondary); }
+  .webinar-price strong { color: var(--white); font-size: 14px; }
+  .webinar-price del { color: var(--text-dim); font-weight: 400; margin-right: 4px; }
+
+  .webinar-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px; font-weight: 600; color: var(--white);
+    line-height: 1.25; margin-bottom: 8px;
+  }
+
+  .webinar-desc {
+    font-size: 12.5px; color: var(--text-secondary);
+    line-height: 1.5; margin-bottom: 16px;
+  }
+
+  .webinar-cta {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%; padding: 13px 20px;
+    background: linear-gradient(135deg, var(--gold), #B89A5A);
+    border-radius: 10px; font-size: 13px; font-weight: 600;
+    color: var(--bg); letter-spacing: 0.03em; transition: var(--transition);
+  }
+  .webinar-card:hover .webinar-cta, .webinar-card:active .webinar-cta {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  }
+  .webinar-cta svg { width: 16px; height: 16px; fill: var(--bg); }
+
+  /* ── FEATURED CARD ── */
+  .featured-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+    transition: var(--transition); margin-bottom: 12px;
+  }
+  .featured-card:hover, .featured-card:active {
+    border-color: rgba(200,169,110,0.3); transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(200,169,110,0.08);
+  }
+  .featured-card .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+
+  .featured-card .card-body { padding: 18px 20px 20px; }
+
+  .featured-card .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 600; color: var(--white);
+    margin-bottom: 6px; line-height: 1.25;
+  }
+
+  .featured-card .card-desc {
+    font-size: 13px; color: var(--text-secondary);
+    line-height: 1.5; margin-bottom: 14px;
+  }
+
+  .card-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; font-weight: 600; color: var(--gold);
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .card-cta svg { width: 14px; height: 14px; fill: var(--gold); transition: transform 0.2s ease; }
+  .featured-card:hover .card-cta svg, .featured-card:active .card-cta svg { transform: translateX(3px); }
+
+  /* ── LINK CARDS ── */
+  .link-card {
+    display: flex; align-items: center; gap: 16px;
+    text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 14px 16px;
+    transition: var(--transition); margin-bottom: 10px;
+  }
+  .link-card:hover, .link-card:active {
+    border-color: rgba(200,169,110,0.3); background: var(--bg-card-hover);
+    transform: translateY(-1px);
+  }
+  .link-card .card-thumb { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+  .link-card .card-info { flex: 1; min-width: 0; }
+  .link-card .card-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px; font-weight: 600; color: var(--white);
+    margin-bottom: 3px; line-height: 1.2;
+  }
+  .link-card .card-info p { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+  .link-card .card-arrow { width: 20px; height: 20px; flex-shrink: 0; fill: var(--text-dim); transition: var(--transition); }
+  .link-card:hover .card-arrow, .link-card:active .card-arrow { fill: var(--gold); transform: translateX(2px); }
+
+  /* ── BOOK CARDS ── */
+  .books-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .book-card {
+    display: flex; flex-direction: column; text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); overflow: hidden; transition: var(--transition);
+  }
+  .book-card:hover, .book-card:active { border-color: rgba(200,169,110,0.3); transform: translateY(-2px); }
+  .book-card .book-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+  .book-card .book-info { padding: 12px 14px 14px; flex: 1; }
+  .book-card .book-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px; font-weight: 600; color: var(--white);
+    margin-bottom: 4px; line-height: 1.2;
+  }
+  .book-card .book-info p { font-size: 11px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 8px; }
+
+  .book-card .book-tag {
+    display: inline-block; font-size: 10px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--gold); background: var(--gold-soft);
+    padding: 4px 8px; border-radius: 4px;
+  }
+
+  /* ── COLUMNS ── */
+  .columns-row {
+    display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .columns-row::-webkit-scrollbar { display: none; }
+
+  .column-card {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 16px 20px;
+    min-width: 130px; flex-shrink: 0; transition: var(--transition); text-align: center;
+  }
+  .column-card:hover, .column-card:active { border-color: rgba(200,169,110,0.3); background: var(--bg-card-hover); }
+  .column-card .col-name { font-size: 12px; font-weight: 500; color: var(--white); margin-bottom: 2px; }
+  .column-card .col-role { font-size: 10px; color: var(--text-secondary); letter-spacing: 0.03em; }
+
+  /* ── FOOTER ── */
+  .footer { text-align: center; padding: 32px 0 20px; border-top: 1px solid var(--border); }
+  .footer p { font-size: 11px; color: var(--text-dim); line-height: 1.6; }
+  .footer-logos {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; margin-bottom: 12px;
+  }
+  .footer-logo { height: 22px; width: auto; opacity: 0.5; filter: brightness(1.2); }
+  .footer-sep { color: var(--text-dim); font-size: 14px; opacity: 0.3; }
+
+  /* ── ANIMATIONS ── */
+  .fade-up { opacity: 0; transform: translateY(20px); animation: fadeUp 0.6s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.15s; }
+  .delay-3 { animation-delay: 0.2s; } .delay-4 { animation-delay: 0.25s; }
+  .delay-5 { animation-delay: 0.3s; } .delay-6 { animation-delay: 0.35s; }
+  .delay-7 { animation-delay: 0.4s; } .delay-8 { animation-delay: 0.45s; }
+  .delay-9 { animation-delay: 0.5s; } .delay-10 { animation-delay: 0.55s; }
+
+  .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 8px 0 32px; }
+
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  .pulse-dot {
+    display: inline-block; width: 6px; height: 6px;
+    background: #3ECF8E; border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @media (min-width: 520px) { .container { padding: 0 32px 80px; } .hero h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<div class="container">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero fade-up">
+    <div class="avatar-wrapper">
+      <div class="avatar-ring">
+        <img class="avatar" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775828312/Design_sem_nome_mttimr.png" alt="Brunno Falcão">
+      </div>
+      <div class="verified-badge">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+      </div>
+    </div>
+
+    <h1>Brunno Falcão</h1>
+    <p class="tagline">
+      Empresário, palestrante e autor best-seller.<br>
+      CEO da <strong>Science Play</strong>. Colunista <strong>Forbes Portugal</strong>.<br>
+      Referência em posicionamento para médicos e nutricionistas.
+    </p>
+
+    <div class="badges">
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>CEO Science Play</span>
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>Autor Best-Seller</span>
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>25 anos em Eventos</span>
+    </div>
+
+    <div class="social-row">
+      <a class="social-btn" href="https://www.instagram.com/brunnofalcao" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.linkedin.com/in/brunnofalcao/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.youtube.com/@myscienceplay" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider fade-up delay-1"></div>
+
+  <!-- ═══ ZONA DESCONFORTO — BESTSELLER ═══ -->
+  <section class="section fade-up delay-2">
+    <div class="section-label">&#9733; Best-Seller #1 do Brasil</div>
+
+    <a class="bestseller-card" href="https://a.co/d/09Bwao8V" target="_blank" rel="noopener">
+      <div class="bestseller-inner">
+        <div class="bestseller-img">
+          <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849405/ZONADESCONFORTO_khvq44.avif" alt="Zona Desconforto" loading="eager">
+        </div>
+        <div class="bestseller-content">
+          <div class="bestseller-badge">&#9733; O mais vendido do Brasil</div>
+          <h3>Zona<br>Desconforto</h3>
+          <p class="bs-subtitle">O livro sobre coragem, ação e o preço de crescer. Ranking PublishNews e Veja.</p>
+          <div class="bestseller-ranks">
+            <span class="rank-item"><span class="rank-num">#1</span> Autoajuda</span>
+            <span class="rank-item"><span class="rank-num">#6</span> Geral</span>
+            <span class="rank-item"><span class="rank-num">#7</span> Veja</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ═══ AULAS DISPONÍVEIS ═══ -->
+  <section class="section fade-up delay-3">
+    <div class="section-label"><span class="pulse-dot"></span> Aulas Disponíveis</div>
+
+    <a class="webinar-card" href="https://pay.hotmart.com/V104619109H?off=rvnr0ax8" target="_blank" rel="noopener">
+      <div class="webinar-body">
+        <div class="webinar-meta">
+          <span class="webinar-type">Aula + Ebook + Relatórios</span>
+          <span class="webinar-price"><del>R$147</del> <strong>R$ 77</strong></span>
+        </div>
+        <h3 class="webinar-title">HealthTech 2026: Como Lucrar com a Nova Saúde</h3>
+        <p class="webinar-desc">O que 3 dias nos bastidores da saúde na Suíça revelam sobre quem vai liderar — e quem vai só assistir. Direto do Health.Tech Global Summit.</p>
+        <div class="webinar-cta">
+          Quero sair na frente — R$ 77
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </a>
+
+    <a class="webinar-card" href="https://pay.hotmart.com/N102219806Q?checkoutMode=10" target="_blank" rel="noopener">
+      <div class="webinar-body">
+        <div class="webinar-meta">
+          <span class="webinar-type">Aula 3h + 3 Bônus</span>
+          <span class="webinar-price"><del>R$197</del> <strong>R$ 47</strong></span>
+        </div>
+        <h3 class="webinar-title">Os 7 Modelos de Infoproduto que Vendem em 2026</h3>
+        <p class="webinar-desc">Para médicos e nutricionistas. 7 modelos validados, plano de 14 dias e um agente de IA que checa compliance do seu conteúdo 24/7.</p>
+        <div class="webinar-cta">
+          47 reais e sem desculpas — acessar
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <div class="divider fade-up delay-4"></div>
+
+  <!-- ═══ MENTORIAS & PROGRAMAS ═══ -->
+  <section class="section fade-up delay-5">
+    <div class="section-label">Mentorias & Programas</div>
+
+    <a class="featured-card" href="http://www.palestre.se" target="_blank" rel="noopener">
+      <img class="card-img" src="https://palestre.se/og-image.webp" alt="Palestre•se" loading="lazy">
+      <div class="card-body">
+        <div class="card-title">Palestre•se</div>
+        <p class="card-desc">A imersão mais exclusiva da área da saúde. Performance, estratégias, networking e método para se tornar referência.</p>
+        <span class="card-cta">Veja as próximas datas <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a class="link-card" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Golden%20Group" target="_blank" rel="noopener">
+      <img class="card-thumb" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167942/Logo_Golden_Group_od2n3s.png" alt="Golden Group" loading="lazy" style="background:#1a1918;padding:8px;">
+      <div class="card-info">
+        <h3>Golden Group</h3>
+        <p>O maior grupo de mentores da saúde do Brasil. Líder de líderes.</p>
+      </div>
+      <svg class="card-arrow" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+    <a class="link-card" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20A%20Mesa" target="_blank" rel="noopener">
+      <img class="card-thumb" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167842/LOGO_A_MESA_mo7ujo.png" alt="A Mesa" loading="lazy" style="background:#1a1918;padding:8px;">
+      <div class="card-info">
+        <h3>A Mesa</h3>
+        <p>Mentoria individual. Vagas limitadas. Apenas por convite ou consulta.</p>
+      </div>
+      <svg class="card-arrow" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ═══ EVENTOS ═══ -->
+  <section class="section fade-up delay-6">
+    <div class="section-label">Eventos</div>
+
+    <a class="featured-card" href="https://www.nutricaobrasil.com.br" target="_blank" rel="noopener">
+      <img class="card-img" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775828899/IDV_Nutrição_Brasil_2026_uz4gbm.png" alt="Nutrição Brasil" loading="lazy">
+      <div class="card-body">
+        <div class="card-title">Nutrição Brasil</div>
+        <p class="card-desc">Imersões presenciais em São Paulo, Balneário Camboriú, Goiânia, Recife e o grande evento em Brasília. Escolha a sua cidade.</p>
+        <span class="card-cta">Garanta sua vaga — Brasília 2026 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+  </section>
+
+  <!-- ═══ LIVROS ═══ -->
+  <section class="section fade-up delay-7">
+    <div class="section-label">Livros</div>
+    <div class="books-grid">
+      <a class="book-card" href="https://sun.eduzz.com/2038359" target="_blank" rel="noopener">
+        <img class="book-img" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849309/Book-Mockup-diariamente2_f5jgmc.jpg" alt="Diariamente" loading="lazy">
+        <div class="book-info">
+          <h3>Diariamente</h3>
+          <p>O guia que maximiza seu potencial em poucos minutos por dia.</p>
+          <span class="book-tag">Comprar</span>
+        </div>
+      </a>
+      <a class="book-card" href="https://pay.hotmart.com/C86962425Q?checkoutMode=10" target="_blank" rel="noopener">
+        <img class="book-img" src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849481/O_fim_do_consultorio_mos3jc.png" alt="O Fim do Consultório" loading="lazy">
+        <div class="book-info">
+          <h3>O Fim do Consultório</h3>
+          <p>#1 Amazon · Categoria Medicina.</p>
+          <span class="book-tag">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ COLUNAS ═══ -->
+  <section class="section fade-up delay-8">
+    <div class="section-label">Colunista</div>
+    <div class="columns-row">
+      <a class="column-card" href="https://www.forbespt.com" target="_blank" rel="noopener">
+        <span class="col-name">Forbes Portugal</span>
+        <span class="col-role">Colunista</span>
+      </a>
+      <a class="column-card" href="https://medicinasa.com.br" target="_blank" rel="noopener">
+        <span class="col-name">Medicina S/A</span>
+        <span class="col-role">Colunista</span>
+      </a>
+      <a class="column-card" href="https://ofitfeed.com.br" target="_blank" rel="noopener">
+        <span class="col-name">O Fit Feed</span>
+        <span class="col-role">Colunista</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer fade-up delay-9">
+    <div class="footer-logos">
+      <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167874/Logo_B2N_10_hyvxna.png" alt="B2N" class="footer-logo">
+      <span class="footer-sep">·</span>
+      <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167674/Logo_SP_negativa_obkofh.png" alt="Science Play" class="footer-logo">
+    </div>
+    <p>Educação · Posicionamento · Transformação</p>
+  </footer>
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.hero, .hero + .divider').forEach(el => {
+    el.style.animationPlayState = 'running';
+  });
+</script>
+
+</body>
+</html>
