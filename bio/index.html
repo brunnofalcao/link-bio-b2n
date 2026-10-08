@@ -31,6 +31,9 @@
     --linha:rgba(212,200,156,.18);--linha-f:rgba(212,200,156,.42);
     --oswald:Oswald,'Arial Narrow',Impact,sans-serif;--sans:'DM Sans',Arial,Helvetica,sans-serif;
     --serif:'Cormorant Garamond',Georgia,serif;--mono:'SF Mono',Menlo,Consolas,monospace;
+    /* foto do herói · ajuste aqui: --hero-x 0% mostra a parte esquerda da foto (empurra o rosto pra direita), 100% a direita;
+       --hero-y 0% topo, 100% base; --hero-desloca empurra a foto inteira pra direita (o lado esquerdo fica sob a diagonal) */
+    --hero-x:0%;--hero-y:20%;--hero-desloca:14%;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -67,7 +70,7 @@
 
   /* ── hero ── */
   header{position:relative;height:min(640px,160vw);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
-  header .foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+  header .foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--hero-x) var(--hero-y);transform:translateX(var(--hero-desloca))}
   header .corte{position:absolute;left:0;top:0;width:646px;height:577px;pointer-events:none;background:linear-gradient(56deg,#000 0 300px,var(--ouro) 300px 301px,rgba(0,0,0,0) 301px)}
   header .fade{position:absolute;left:0;right:0;top:46%;height:54%;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,#000 40%)}
   .topo{position:absolute;top:20px;left:22px;right:16px;display:flex;justify-content:space-between;align-items:center}
