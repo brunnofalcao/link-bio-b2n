@@ -1,0 +1,8 @@
+FOTOS DO SITE · suba aqui, com estes nomes exatos (minúsculas, sem acento, sem espaço)
+
+brunno-hero.jpg    herói do site e da bio · vertical 4:5 · mínimo 1200x1500 · ideal 1600x2000
+brunno-sobre.jpg   seção Sobre · horizontal 3:2 · 1600x1066 · mesa, bastidor ou plateia
+brunno-palco.jpg   seção Palestras · panorâmica 21:9 · 2400x1030 · palco em plano aberto, público visível
+
+Enquanto um arquivo não existir, o espaço dele fica preto, sem quebrar a página.
+Exporte em JPG, qualidade 80, até 400 KB cada.
