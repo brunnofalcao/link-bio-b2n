@@ -3,17 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Brunno Falcão · Links</title>
-<meta name="description" content="CEO da Science Play. Colunista da Forbes Portugal. Mentor do Palestre•se, Golden e A Mesa. 25 anos formando referências na saúde.">
+<title>Brunno Falcão · Empresário, palestrante e autor best-seller</title>
+<meta name="description" content="Empresário, palestrante e autor best-seller. CEO da Science Play, colunista da Forbes Portugal. Há 25 anos formando médicos e nutricionistas que lideram no consultório, no palco e no digital.">
 <meta name="theme-color" content="#000000">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://www.brunnofalcao.com.br/bio">
+<link rel="canonical" href="https://www.brunnofalcao.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Brunno Falcão">
-<meta property="og:title" content="Brunno Falcão · Links">
-<meta property="og:description" content="Health Influence Day 04/11, ZONA DESCONFORTO, aulas, mentorias e eventos. Tudo em um lugar.">
-<meta property="og:url" content="https://www.brunnofalcao.com.br/bio">
+<meta property="og:title" content="Brunno Falcão · Movimento que constrói.">
+<meta property="og:description" content="Empresário, palestrante e autor best-seller. CEO da Science Play. Mentor do Palestre•se, Golden e A Mesa. Colunista da Forbes Portugal.">
+<meta property="og:url" content="https://www.brunnofalcao.com.br/">
 <meta property="og:image" content="https://www.brunnofalcao.com.br/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -23,321 +22,667 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Brunno Falcão","url":"https://www.brunnofalcao.com.br/","image":"https://www.brunnofalcao.com.br/assets/og.jpg","jobTitle":"CEO e fundador da Science Play","description":"Empresário, palestrante e autor best-seller dos livros ZONA DESCONFORTO e O Fim do Consultório. Colunista da Forbes Portugal, Medicina S/A e O Fit Feed.","sameAs":["https://www.instagram.com/brunnofalcao","https://www.linkedin.com/in/brunnofalcao/","https://www.youtube.com/@myscienceplay"]}
+</script>
 <!-- GTM / Meta Pixel / GA4: cole o snippet do <head> aqui -->
 <style>
   :root{
-    --preto:#000;--grafite:#1A1A1A;--ouro:#D4C89C;--bronze:#A8905A;--off:#F0F0F0;--pedra:#B8B8B8;
-    --linha:rgba(212,200,156,.18);--linha-f:rgba(212,200,156,.42);
+    --preto:#000;--grafite:#1A1A1A;--ouro:#D4C89C;--ouro-prof:#C4A962;--bronze:#A8905A;
+    --off:#F0F0F0;--pedra:#B8B8B8;--linha:rgba(212,200,156,.18);--linha-f:rgba(212,200,156,.42);
     --oswald:Oswald,'Arial Narrow',Impact,sans-serif;--sans:'DM Sans',Arial,Helvetica,sans-serif;
     --serif:'Cormorant Garamond',Georgia,serif;--mono:'SF Mono',Menlo,Consolas,monospace;
-    /* foto do herói · ajuste aqui: --hero-x 0% mostra a parte esquerda da foto (empurra o rosto pra direita), 100% a direita;
-       --hero-y 0% topo, 100% base; --hero-desloca empurra a foto inteira pra direita (o lado esquerdo fica sob a diagonal) */
-    --hero-x:0%;--hero-y:20%;--hero-desloca:14%;
+    --pad:clamp(20px,4vw,48px);--sec:clamp(80px,11vw,152px);
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   body{margin:0;background:var(--preto);color:var(--off);font-family:var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
   a{color:var(--ouro);text-decoration:none;transition:color 150ms,background 150ms,border-color 150ms}
   a:hover{color:var(--bronze)}
-  a:focus-visible{outline:2px solid var(--ouro);outline-offset:2px}
-  img{display:block}
-  h1,h2,h3,p{margin:0}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ouro);outline-offset:2px}
+  img{display:block;max-width:100%}
+  h1,h2,h3,p,figure,blockquote{margin:0}
+  input,select,textarea,button{font-family:inherit}
   [hidden]{display:none!important}
 
-  .wrap{min-height:100vh;display:flex;justify-content:center;align-items:flex-start;background:var(--preto)}
-  main{width:100%;max-width:430px;min-height:100vh;display:flex;flex-direction:column;border-left:1px solid rgba(212,200,156,.14);border-right:1px solid rgba(212,200,156,.14)}
-
+  .wrap{max-width:1200px;margin:0 auto;padding:0 var(--pad)}
   .kicker{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);font-weight:700}
   .kicker.pedra{color:var(--pedra)}
-  .pill{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ouro);border:1px solid var(--linha-f);padding:4px 8px}
-  .pill.cheia{color:#000;background:var(--ouro);border-color:var(--ouro);letter-spacing:.14em;padding:4px 7px}
-  .pill.fina{letter-spacing:.14em;padding:3px 7px}
-  .t-oswald{font-family:var(--oswald);font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:#fff;line-height:1}
-  .sec{display:flex;flex-direction:column;gap:12px}
-  .sec h3{font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--pedra)}
-  .caixa{background:var(--grafite);border:1px solid var(--linha);color:var(--off)}
-  a.caixa:hover{border-color:var(--linha-f);color:var(--off)}
-  .desc{font-size:13px;line-height:1.5;color:var(--pedra)}
-  .link-cta{font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro)}
-  .btn{display:flex;justify-content:center;align-items:center;min-height:48px;padding:12px 20px;background:var(--ouro);border:1px solid var(--ouro);color:#000;font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  .h2{font-family:var(--oswald);font-weight:500;font-size:clamp(24px,2.6vw,30px);line-height:1.15;letter-spacing:.02em;text-transform:uppercase;color:#fff;text-wrap:balance}
+  .h2 em,.h1 em{font-style:normal;color:var(--ouro-prof)}
+  .h3{font-family:var(--oswald);font-weight:500;font-size:28px;line-height:1.05;letter-spacing:.02em;text-transform:uppercase;color:#fff}
+  .lead{font-weight:300;font-size:clamp(17px,1.3vw,18.5px);line-height:1.55;color:var(--off);text-wrap:pretty}
+  .texto{font-size:15px;line-height:1.62;color:var(--off);text-wrap:pretty}
+  .texto.pedra,.pedra{color:var(--pedra)}
+  .nota{font-size:12.5px;color:var(--pedra);line-height:1.5}
+  .cita{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(22px,2vw,26px);line-height:1.35;color:var(--off);border-left:2px solid var(--ouro);padding-left:20px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;background:var(--ouro);border:1px solid var(--ouro);color:#000;font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:background 150ms,border-color 150ms,color 150ms}
   .btn:hover{background:var(--bronze);border-color:var(--bronze);color:#000}
   .btn.linha{background:transparent;color:var(--ouro)}
   .btn.linha:hover{background:transparent;border-color:var(--bronze);color:var(--bronze)}
-  .btn.linha.suave{border-color:var(--linha-f)}
-  .btn.linha.suave:hover{border-color:var(--ouro);color:var(--ouro)}
-  .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .btn.branco{background:#fff;border-color:#fff;color:#000}
+  .btn.branco:hover{background:var(--ouro);border-color:var(--ouro);color:#000}
+  .btn.sm{padding:13px 26px}
+  .link-cta{font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro)}
+  .caixa{background:var(--preto);border:1px solid var(--linha);color:var(--off)}
+  a.caixa:hover{border-color:var(--linha-f);color:var(--off)}
+  .caixa.topo{border-top:2px solid var(--ouro)}
+  a.caixa.topo:hover{border-top-color:var(--ouro)}
+  .sec-head{display:flex;flex-direction:column;gap:16px}
+  .secao{padding:var(--sec) 0}
+  .secao.borda{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+  .col{display:flex;flex-direction:column}
+  .lista{display:flex;flex-direction:column;border-top:1px solid var(--linha)}
+
+  /* ── faixa do evento ── */
+  .faixa{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;padding:12px 20px;background:var(--preto);border-bottom:1px solid var(--ouro);color:var(--off);font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  .faixa:hover{color:var(--off)}
+  .faixa span{white-space:nowrap}
+  .faixa .ouro{color:var(--ouro)}
+  .faixa .cta{color:var(--ouro);border-bottom:1px solid var(--ouro)}
+
+  /* ── nav ── */
+  nav{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--linha)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;min-height:72px}
+  nav .marca{display:flex;align-items:center;padding:16px 0;order:1;flex-shrink:0}
+  nav .marca img{height:20px;width:auto}
+  nav .menu{display:flex;flex-wrap:wrap;gap:4px 24px;order:3;flex:1 1 560px;justify-content:center;padding-bottom:6px;font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  nav .menu a{color:var(--off);padding:8px 0}
+  nav .menu a:hover{color:var(--ouro)}
+  nav .btn{order:2;flex-shrink:0;padding:12px 22px}
+  @media (max-width:640px){ nav .menu{display:none} }
+  @media (min-width:900px){ nav .btn{order:4} }
 
   /* ── hero ── */
-  header{position:relative;height:min(640px,160vw);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
-  header .foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--hero-x) var(--hero-y);transform:translateX(var(--hero-desloca))}
-  header .corte{position:absolute;left:0;top:0;width:646px;height:577px;pointer-events:none;background:linear-gradient(56deg,#000 0 300px,var(--ouro) 300px 301px,rgba(0,0,0,0) 301px)}
-  header .fade{position:absolute;left:0;right:0;top:46%;height:54%;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,#000 40%)}
-  .topo{position:absolute;top:20px;left:22px;right:16px;display:flex;justify-content:space-between;align-items:center}
-  .topo img{height:26px;width:auto}
-  .redes{display:flex;gap:8px}
-  .redes a{width:44px;height:44px;border:1px solid var(--linha-f);background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-  .redes a:hover{border-color:var(--ouro)}
-  .redes svg{width:16px;height:16px;fill:var(--off)}
-  .hero-texto{position:relative;padding:0 22px 26px;display:flex;flex-direction:column;gap:12px}
-  .hero-texto h1{font-family:var(--oswald);font-weight:600;font-size:40px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
-  .hero-texto p{font-size:15px;line-height:1.55;color:var(--off);text-wrap:pretty}
-  .assinatura{font-family:var(--oswald);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro)}
+  header.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));background:var(--preto)}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;gap:28px;padding:clamp(56px,8vw,112px) var(--pad) clamp(48px,6vw,96px);max-width:640px;justify-self:end;width:100%}
+  .h1{font-family:var(--oswald);font-weight:600;font-size:clamp(36px,4.6vw,64px);line-height:1.02;letter-spacing:0;text-transform:uppercase;color:#fff;text-wrap:balance}
+  .hero-copy .lead{max-width:520px}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .redes{display:flex;gap:16px;align-items:center;font-size:12.5px;color:var(--pedra)}
+  .redes a{color:var(--pedra)}
+  .redes a:hover{color:var(--ouro)}
+  .hero-foto{position:relative;height:min(640px,140vw);overflow:hidden}
+  .hero-foto img.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .hero-foto .corte{position:absolute;inset:0;pointer-events:none;background:linear-gradient(56deg,#000 0 358px,var(--ouro) 358px 359.5px,rgba(0,0,0,0) 359.5px)}
+  .hero-foto .nn{position:absolute;left:var(--pad);bottom:28px;height:22px;width:auto;opacity:.9;pointer-events:none}
 
-  .conteudo{padding:16px 22px 40px;display:flex;flex-direction:column;gap:28px}
+  /* ── números ── */
+  .numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1px;padding:1px}
+  .numero{background:var(--preto);outline:1px solid var(--linha);padding:24px;display:flex;flex-direction:column;gap:8px}
+  .numero b{font-family:var(--oswald);font-weight:500;font-size:56px;line-height:1;color:var(--ouro)}
+  .numero span{font-size:13px;color:var(--off)}
 
-  /* ── ingresso do evento ── */
-  .ingresso{display:grid;grid-template-columns:96px minmax(0,1fr);background:var(--grafite);border:1px solid var(--linha);border-top:2px solid var(--ouro)}
-  .ingresso .data{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:22px 8px;border-right:1px dashed var(--linha-f)}
-  .ingresso .dia{font-family:var(--oswald);font-size:60px;line-height:.9;font-weight:600;color:var(--ouro)}
-  .ingresso .mes{font-family:var(--oswald);font-size:14px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#fff}
-  .ingresso .hora{font-size:12.5px;color:var(--pedra);margin-top:6px}
-  .ingresso .corpo{padding:20px 18px 18px;display:flex;flex-direction:column;gap:10px}
-  .ingresso .linha1{display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .ingresso h2{font-family:var(--oswald);font-size:26px;line-height:1.05;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:#fff}
-  .ingresso .cita{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;line-height:1.3;color:var(--off)}
-  .ingresso .contagem{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--pedra);font-weight:700}
-  .ingresso .contagem b{color:var(--ouro);font-weight:700}
-  .ingresso .btn{margin-top:6px}
-
-  /* ── livro ── */
-  .zona{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:center;padding:18px}
-  .zona img{width:96px}
-  .zona .info{display:flex;flex-direction:column;gap:8px}
-  .zona .t{font-size:24px}
-  .zona .pills{display:flex;flex-wrap:wrap;gap:6px}
-  .zona .link-cta{margin-top:2px}
-
-  /* ── aulas ── */
-  .aula{display:flex;align-items:center;gap:16px;padding:14px 16px}
-  .aula .preco{display:flex;flex-direction:column;align-items:center;justify-content:center;width:60px;height:60px;border:1px solid var(--linha);flex-shrink:0;gap:2px}
-  .aula .preco s{font-size:11px;color:var(--pedra)}
-  .aula .preco b{font-family:var(--oswald);font-size:20px;font-weight:500;color:var(--ouro);line-height:1}
-  .aula .info{display:flex;flex-direction:column;gap:4px;min-width:0}
-  .aula .info b{font-size:15px;font-weight:500;line-height:1.35;color:#fff}
-  .aula .info span{font-size:13px;line-height:1.45;color:var(--pedra)}
+  /* ── sobre ── */
+  .sobre{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(40px,6vw,96px);align-items:start}
+  .sobre .fixo{display:flex;flex-direction:column;gap:24px;position:sticky;top:104px}
+  .sobre .corpo{display:flex;flex-direction:column;gap:24px}
+  .foto-32{width:100%;aspect-ratio:3/2;object-fit:cover}
 
   /* ── mentorias ── */
-  .palestrese{display:block;position:relative;overflow:hidden;border:1px solid var(--linha);color:var(--off);height:176px}
-  .palestrese:hover{border-color:var(--linha-f);color:var(--off)}
-  .palestrese img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .palestrese .sombra{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.96) 100%)}
-  .palestrese .texto{position:absolute;left:16px;right:16px;bottom:14px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
-  .palestrese .texto .col{display:flex;flex-direction:column;gap:5px}
-  .palestrese .t{font-size:26px}
-  .palestrese .link-cta{white-space:nowrap}
-  .tile{display:flex;flex-direction:column;gap:8px;padding:18px 16px;min-height:118px}
-  .tile .t{font-size:24px}
-  .tile .desc{line-height:1.45;margin-top:auto}
+  .duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:end}
+  .cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+  .card{display:flex;flex-direction:column;gap:20px;padding:40px 32px}
+  .card .meio{display:flex;flex-direction:column;gap:14px;flex:1}
+  .card .texto{color:var(--pedra)}
 
-  /* ── eventos e livros ── */
-  .nb{display:flex;align-items:center;gap:16px;padding:12px 16px 12px 12px}
-  .nb img{width:60px;height:60px;object-fit:cover;flex-shrink:0}
-  .nb .info{display:flex;flex-direction:column;gap:4px;min-width:0}
-  .nb .t{font-size:20px}
-  .nb .desc{line-height:1.45}
-  .livro{display:flex;gap:12px;align-items:center;padding:12px}
-  .livro img{width:42px;height:58px;object-fit:cover;flex-shrink:0}
-  .livro .info{display:flex;flex-direction:column;gap:4px}
-  .livro b{font-size:15px;font-weight:500;line-height:1.2;color:#fff}
-  .livro span{font-size:12.5px;color:var(--pedra)}
+  /* ── palestras ── */
+  .foto-219{width:100%;aspect-ratio:21/9;object-fit:cover}
+  .palestras{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,5vw,72px);align-items:start}
+  .temas h3{font-family:var(--oswald);font-weight:500;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#fff;padding-bottom:12px;border-bottom:1px solid var(--linha)}
+  .tema{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 16px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--linha)}
+  .tema .n{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--ouro);font-weight:700}
+  .tema .cat{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);font-weight:700;margin-bottom:8px}
+  .tema .t{font-family:var(--oswald);font-weight:500;font-size:24px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff;display:block;margin-bottom:6px}
+  .tema .d{font-size:15px;line-height:1.5;color:var(--pedra)}
+  .contratantes{display:flex;flex-direction:column;gap:22px;padding:40px 32px}
+  @media (min-width:900px){ .contratantes{position:sticky;top:104px} }
+  .contratantes .h3{letter-spacing:.01em;text-wrap:balance}
+  .formatos{display:flex;flex-direction:column;border-top:1px solid var(--linha)}
+  .formato{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--linha);font-size:15px}
+  .formato b{color:var(--off);font-weight:500}
+  .formato span{color:var(--pedra)}
+
+  /* ── livros ── */
+  .livro-hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(28px,4vw,48px)}
+  .livro-hl .capa{display:flex;justify-content:center}
+  .livro-hl .capa img{width:min(100%,260px)}
+  .livro-hl .info{display:flex;flex-direction:column;gap:20px}
+  .livro-hl .titulo{font-family:var(--oswald);font-weight:600;font-size:clamp(40px,4vw,56px);line-height:1;letter-spacing:-.005em;text-transform:uppercase;color:#fff}
+  .livro-hl .cita{font-size:24px}
+  .ranks{display:flex;gap:32px;flex-wrap:wrap}
+  .rank{display:flex;flex-direction:column;gap:4px}
+  .rank b{font-family:var(--oswald);font-weight:600;font-size:40px;line-height:1;color:var(--ouro)}
+  .rank span{font-size:12.5px;color:var(--pedra)}
+  .livros2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .livro{display:grid;grid-template-columns:110px minmax(0,1fr);gap:24px;align-items:center;padding:24px}
+  .livro img{width:110px;aspect-ratio:3/4;object-fit:cover}
+  .livro .info{display:flex;flex-direction:column;gap:10px}
+  .livro .t{font-family:var(--oswald);font-weight:500;font-size:26px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+  .livro .d{font-size:15px;line-height:1.5;color:var(--pedra)}
+
+  /* ── eventos ── */
+  .eventos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .hid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:32px;align-items:center;padding:clamp(26px,3vw,40px);grid-column:1/-1}
+  .hid .data{display:flex;gap:28px;align-items:center}
+  .hid .dia{font-family:var(--oswald);font-weight:600;font-size:clamp(64px,7vw,96px);line-height:.9;color:var(--ouro);text-transform:uppercase}
+  .hid .nome{display:flex;flex-direction:column;gap:10px}
+  .hid .nome h3{font-family:var(--oswald);font-weight:500;font-size:clamp(28px,3.2vw,40px);line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+  .hid .nome .cita{border:0;padding:0;font-size:22px}
+  .hid .acao{display:flex;flex-direction:column;gap:18px}
+  .nb{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:28px;align-items:center;padding:clamp(24px,3vw,32px);grid-column:1/-1}
+  .nb .info{display:flex;flex-direction:column;gap:12px}
+  .nb h3{font-family:var(--oswald);font-weight:500;font-size:clamp(28px,3vw,36px);line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+  .nb .link-cta{justify-self:start}
+
+  /* ── depoimentos ── */
+  .depos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .depo{display:flex;flex-direction:column;gap:20px;padding:28px}
+  .depo blockquote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:22px;line-height:1.35;color:var(--pedra);border-left:2px solid var(--ouro);padding-left:20px}
+  .depo figcaption{display:flex;flex-direction:column;gap:2px;margin-top:auto}
+  .depo figcaption a{display:flex;flex-direction:column;gap:2px;color:inherit}
+  .depo figcaption a:hover b{color:var(--ouro)}
+  .depo figcaption b{font-size:15px;font-weight:500;color:var(--off)}
+  .depo figcaption span{font-size:12.5px;color:var(--pedra)}
+
+  /* ── imprensa / contato ── */
+  .duas-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(40px,6vw,96px);align-items:start}
+  .coluna{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid var(--linha);color:var(--off)}
+  .coluna:hover{color:var(--ouro)}
+  .coluna b{font-family:var(--oswald);font-weight:500;font-size:28px;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+  .coluna span{font-size:12.5px;color:var(--pedra)}
+  .painel{display:flex;flex-direction:column;gap:20px;padding:40px 32px}
+  .painel .h3{letter-spacing:.01em;text-wrap:balance}
+  .ecos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+  .eco{display:flex;flex-direction:column;gap:16px;padding:24px;min-height:200px}
+  .eco img{height:28px;width:auto;align-self:flex-start;object-fit:contain}
+  .eco .fim{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+  .eco .t{font-family:var(--oswald);font-weight:500;font-size:24px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+  .eco .d{font-size:12.5px;line-height:1.5;color:var(--pedra)}
+  .whats{display:flex;flex-direction:column;gap:6px;padding:22px 24px}
+  .whats b{font-family:var(--oswald);font-weight:500;font-size:24px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+  .whats span{font-size:12.5px;color:var(--pedra)}
+  .redes2{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}
+  .redes2 a{color:var(--off);border-bottom:1px solid var(--linha-f);padding-bottom:2px}
+  .redes2 a:hover{color:var(--ouro)}
+
+  /* ── formulário ── */
+  form.contato{display:flex;flex-direction:column;gap:16px;padding:clamp(24px,3vw,36px)}
+  form.contato .g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px}
+  form.contato label{display:flex;flex-direction:column;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);font-weight:700}
+  form.contato input,form.contato select,form.contato textarea{background:var(--preto);border:1px solid var(--linha-f);color:var(--off);padding:14px 16px;font-family:var(--sans);font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;width:100%;border-radius:0;appearance:none;-webkit-appearance:none}
+  form.contato textarea{resize:vertical;line-height:1.5}
+  form.contato input:focus,form.contato select:focus,form.contato textarea:focus{border-color:var(--ouro);outline:2px solid var(--ouro);outline-offset:1px}
+  form.contato select option{background:var(--preto);color:var(--off)}
+  form.contato .btn{margin-top:4px;width:100%}
+  .honey{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+  .recebido{display:flex;flex-direction:column;gap:16px;padding:clamp(28px,3vw,40px);min-height:320px;justify-content:center}
+  .recebido .grande{font-family:var(--oswald);font-weight:600;font-size:40px;line-height:1;text-transform:uppercase;color:#fff}
 
   /* ── footer ── */
-  footer{display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;padding-top:24px;border-top:1px solid var(--linha)}
-  footer p{font-size:13px;line-height:1.6;color:var(--pedra)}
-  footer p a{color:var(--off)}
-  footer p a:hover{color:var(--ouro)}
-  footer .btn{width:100%}
-  footer .marcas{display:flex;align-items:center;gap:16px;padding-top:4px}
-  footer .marcas img{width:auto}
+  footer{border-top:1px solid var(--linha)}
+  footer .wrap{padding:48px var(--pad) 40px;display:flex;flex-direction:column;gap:36px}
+  footer .topo{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+  footer .marca{display:flex;flex-direction:column;gap:14px}
+  footer .marca img{height:56px;width:auto}
+  footer .marca span{font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--off)}
+  footer .menu{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:var(--oswald);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  footer .menu a{color:var(--pedra)}
+  footer .menu a:hover{color:var(--ouro)}
+  footer .menu a.bio{color:var(--ouro)}
+  footer .menu a.bio:hover{color:var(--bronze)}
+  footer .base{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid var(--linha);padding-top:24px}
+  footer .base img{height:18px;width:auto;opacity:.7}
 </style>
 </head>
 <body>
 <!-- GTM (noscript): cole aqui -->
-<div class="wrap">
-<main>
 
-  <!-- ═══ HERO ═══ -->
-  <header>
-    <img class="foto" src="/assets/fotos/brunno-hero.jpg" alt="Brunno Falcão" fetchpriority="high" onerror="this.hidden=true">
-    <div class="corte"></div>
-    <div class="fade"></div>
-    <div class="topo">
-      <img src="/assets/b2n/Logo_B2N_10_negativo.png" alt="B2N">
-      <span class="redes">
-        <a href="https://www.instagram.com/brunnofalcao" target="_blank" rel="noopener" aria-label="Instagram @brunnofalcao" data-track="instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/brunnofalcao/" target="_blank" rel="noopener" aria-label="LinkedIn" data-track="linkedin">
-          <svg viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://www.youtube.com/@myscienceplay" target="_blank" rel="noopener" aria-label="YouTube" data-track="youtube">
-          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-        </a>
-      </span>
+<!-- ═══ FAIXA DO EVENTO (CONFIG.eventBanner) ═══ -->
+<a id="faixa" class="faixa" href="https://hid.scienceplay.com/?utm_source=site&amp;utm_medium=banner&amp;utm_campaign=hid" target="_blank" rel="noopener" data-track="site_banner_hid">
+  <span>Health Influence Day · 04 Nov · São Paulo · <span class="ouro">Gratuito</span></span>
+  <span class="cta">Quero minha vaga</span>
+</a>
+
+<nav>
+  <div class="wrap">
+    <a class="marca" href="#topo" aria-label="Brunno Falcão · início"><img src="/assets/b2n/Logo_B2N_7_logotipo_horizontal_negativo.png" alt="Brunno Falcão"></a>
+    <div class="menu">
+      <a href="#sobre">Sobre</a><a href="#mentorias">Mentorias</a><a href="#palestras">Palestras</a><a href="#livros">Livros</a><a href="#eventos">Eventos</a><a href="#imprensa">Imprensa</a>
     </div>
-    <div class="hero-texto">
-      <span class="kicker">Empresário · Palestrante · Autor best-seller</span>
-      <h1>Brunno Falcão</h1>
-      <p>CEO da Science Play. Colunista da Forbes Portugal. Mentor do Palestre•se, Golden e A Mesa. 25 anos formando referências na saúde.</p>
-      <span class="assinatura">Movimento que constrói.</span>
-    </div>
-  </header>
-
-  <div class="conteudo">
-
-    <!-- ═══ HEALTH INFLUENCE DAY · 04/11 (CONFIG.estadoEvento) ═══ -->
-    <section id="evento" class="ingresso">
-      <div class="data">
-        <span class="kicker pedra">Quarta</span>
-        <span class="dia">04</span>
-        <span class="mes">Nov</span>
-        <span class="hora">16h às 20h</span>
-      </div>
-      <div class="corpo">
-        <div class="linha1">
-          <span class="kicker" style="white-space:nowrap">Próximo encontro</span>
-          <span class="pill" data-estado="inscricoes">Gratuito</span>
-          <span class="pill" data-estado="esgotado" hidden>Esgotado</span>
-        </div>
-        <h2>Health Influence Day</h2>
-        <p class="cita">Sejamos nós os influenciadores. Não os influenciados.</p>
-        <p class="desc">Hotmart, Vila Madalena · autoridade e crescimento digital na saúde · lugares limitados</p>
-        <span id="contagem" class="contagem" hidden>Faltam <b id="dias">0</b> dias</span>
-        <a class="btn" data-estado="inscricoes" href="https://hid.scienceplay.com/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=hid" target="_blank" rel="noopener" data-track="hid">Quero minha vaga</a>
-        <a class="btn linha" data-estado="esgotado" hidden href="https://hid.scienceplay.com/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=hid-espera" target="_blank" rel="noopener" data-track="hid-espera">Entrar na lista de espera</a>
-      </div>
-    </section>
-
-    <!-- ═══ LIVRO ═══ -->
-    <section class="sec">
-      <h3>Best-seller nº 1 do Brasil</h3>
-      <a class="caixa zona" href="https://a.co/d/09Bwao8V" target="_blank" rel="noopener" data-track="zona-desconforto">
-        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849405/ZONADESCONFORTO_khvq44.avif" alt="ZONA DESCONFORTO">
-        <div class="info">
-          <span class="t-oswald t">Zona Desconforto</span>
-          <span class="desc">Coragem, ação e o preço de crescer.</span>
-          <div class="pills"><span class="pill cheia">#1 Autoajuda</span><span class="pill fina">#6 Geral</span><span class="pill fina">#7 Veja</span></div>
-          <span class="link-cta">Comprar na Amazon</span>
-        </div>
-      </a>
-    </section>
-
-    <!-- ═══ AULAS (CONFIG.mostrarAulas) ═══ -->
-    <section id="aulas" class="sec">
-      <h3>Aulas disponíveis</h3>
-      <a class="caixa aula" href="https://pay.hotmart.com/V104619109H?off=rvnr0ax8&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=aula-healthtech" target="_blank" rel="noopener" data-track="aula-healthtech">
-        <div class="preco"><s>R$ 147</s><b>R$ 77</b></div>
-        <div class="info"><b>HealthTech 2026: como lucrar com a nova saúde</b><span>Aula + ebook + relatórios · Suíça</span></div>
-      </a>
-      <a class="caixa aula" href="https://pay.hotmart.com/N102219806Q?checkoutMode=10&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=aula-7-modelos" target="_blank" rel="noopener" data-track="aula-7-modelos">
-        <div class="preco"><s>R$ 197</s><b>R$ 47</b></div>
-        <div class="info"><b>Os 7 modelos de infoproduto que vendem em 2026</b><span>Aula de 3h + 3 bônus · IA de compliance</span></div>
-      </a>
-    </section>
-
-    <!-- ═══ MENTORIAS ═══ -->
-    <section class="sec">
-      <h3>Mentorias e programas</h3>
-      <a class="palestrese" href="http://www.palestre.se/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=palestrese" target="_blank" rel="noopener" data-track="palestrese">
-        <img src="https://palestre.se/og-image.webp" alt="Palestre•se" loading="lazy">
-        <div class="sombra"></div>
-        <div class="texto">
-          <div class="col">
-            <span class="kicker">Entrada · Imersão de 3 dias</span>
-            <span class="t-oswald t">Palestre•se</span>
-            <span class="desc" style="color:var(--pedra)">Saia com uma palestra pronta, em palco de verdade</span>
-          </div>
-          <span class="link-cta">Datas</span>
-        </div>
-      </a>
-      <div class="g2">
-        <a class="caixa tile" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pela%20bio%20do%20Instagram%20e%20quero%20saber%20mais%20sobre%20a%20Golden" target="_blank" rel="noopener" data-track="golden">
-          <span class="kicker">Grupo</span>
-          <span class="t-oswald t">Golden</span>
-          <span class="desc">Mastermind de mentores da saúde</span>
-        </a>
-        <a class="caixa tile" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pela%20bio%20do%20Instagram%20e%20quero%20saber%20mais%20sobre%20A%20Mesa" target="_blank" rel="noopener" data-track="a-mesa">
-          <span class="kicker">Individual</span>
-          <span class="t-oswald t">A Mesa</span>
-          <span class="desc">Por convite ou consulta</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ═══ EVENTOS E LIVROS ═══ -->
-    <section class="sec">
-      <h3>Eventos e livros</h3>
-      <a class="caixa nb" href="https://www.nutricaobrasil.com.br/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=nutricao-brasil" target="_blank" rel="noopener" data-track="nutricao-brasil">
-        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775828899/IDV_Nutri%C3%A7%C3%A3o_Brasil_2026_uz4gbm.png" alt="Nutrição Brasil" loading="lazy">
-        <div class="info">
-          <span class="t-oswald t">Nutrição Brasil 2026</span>
-          <span class="desc">Balneário Camboriú · Belém · Belo Horizonte · Brasília · Curitiba · Goiânia · Porto Alegre · Rio de Janeiro</span>
-        </div>
-      </a>
-      <div class="g2">
-        <a class="caixa livro" href="https://pay.hotmart.com/C86962425Q?checkoutMode=10&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=fim-consultorio" target="_blank" rel="noopener" data-track="fim-consultorio">
-          <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849481/O_fim_do_consultorio_mos3jc.png" alt="O Fim do Consultório" loading="lazy">
-          <div class="info"><b>O Fim do Consultório</b><span>#1 Amazon · Medicina</span></div>
-        </a>
-        <a class="caixa livro" href="https://sun.eduzz.com/2038359?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=diariamente" target="_blank" rel="noopener" data-track="diariamente">
-          <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849309/Book-Mockup-diariamente2_f5jgmc.jpg" alt="Diariamente" loading="lazy">
-          <div class="info"><b>Diariamente</b><span>Co-autoria</span></div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ═══ FOOTER ═══ -->
-    <footer>
-      <p>Colunista · <a href="https://www.forbespt.com" target="_blank" rel="noopener" data-track="forbes">Forbes Portugal</a> · <a href="https://medicinasa.com.br" target="_blank" rel="noopener" data-track="medicinasa">Medicina S/A</a> · <a href="https://ofitfeed.com.br" target="_blank" rel="noopener" data-track="ofitfeed">O Fit Feed</a></p>
-      <a class="btn linha suave" href="/" data-track="site">Site completo · brunnofalcao.com.br</a>
-      <div class="marcas">
-        <img src="/assets/b2n/Logo_B2N_7_logotipo_horizontal_negativo.png" alt="Brunno Falcão" style="height:14px;opacity:.8">
-        <span style="color:var(--pedra)">·</span>
-        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167674/Logo_SP_negativa_obkofh.png" alt="Science Play" style="height:16px;opacity:.7" loading="lazy">
-      </div>
-    </footer>
-
+    <a class="btn branco" href="#contato">Falar com a equipe</a>
   </div>
-</main>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header id="topo" class="hero">
+  <div class="hero-copy">
+    <span class="kicker">Empresário · Palestrante · Autor best-seller</span>
+    <h1 class="h1">Autoridade não se declara. <em>Se constrói.</em></h1>
+    <p class="lead">Empresário, palestrante e autor best-seller. CEO da Science Play, colunista da Forbes Portugal. Há 25 anos formando médicos e nutricionistas que lideram no consultório, no palco e no digital.</p>
+    <div class="ctas" data-cta="mentorias">
+      <a class="btn" href="#mentorias">Conhecer as mentorias</a>
+      <a class="btn linha" href="#palestras">Contratar palestra</a>
+    </div>
+    <div class="ctas" data-cta="palestras" hidden>
+      <a class="btn" href="#palestras">Contratar palestra</a>
+      <a class="btn linha" href="#mentorias">Conhecer as mentorias</a>
+    </div>
+    <div class="redes">
+      <a href="https://www.instagram.com/brunnofalcao" target="_blank" rel="noopener">@brunnofalcao</a><span>·</span>
+      <a href="https://www.linkedin.com/in/brunnofalcao/" target="_blank" rel="noopener">LinkedIn</a><span>·</span>
+      <a href="https://www.youtube.com/@myscienceplay" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="hero-foto">
+    <img class="foto" data-foto="hero" src="/assets/fotos/brunno-hero.jpg" alt="Brunno Falcão" fetchpriority="high">
+    <div class="corte"></div>
+    <img class="nn" src="/assets/b2n/Simbolo_NN_B2N_ouro.png" alt="">
+  </div>
+</header>
+
+<!-- ═══ NÚMEROS ═══ -->
+<div class="wrap">
+  <div class="numeros">
+    <div class="numero"><b>25</b><span>anos no setor de congressos</span></div>
+    <div class="numero"><b>95</b><span>países alcançados pela Science Play</span></div>
+    <div class="numero"><b>3</b><span>livros publicados</span></div>
+    <div class="numero"><b>Nº 1</b><span>PublishNews · Autoajuda · ZONA DESCONFORTO</span></div>
+  </div>
 </div>
+
+<!-- ═══ SOBRE ═══ -->
+<section id="sobre" class="secao">
+  <div class="wrap sobre">
+    <div class="fixo">
+      <span class="kicker">Sobre</span>
+      <h2 class="h2">Quem não se posiciona <em>é posicionado.</em></h2>
+      <p class="cita">Todo mundo quer crescer. Quase ninguém quer pagar o custo.</p>
+    </div>
+    <div class="corpo">
+      <img class="foto-32" data-foto="sobre" src="/assets/fotos/brunno-sobre.jpg" alt="Brunno Falcão" loading="lazy">
+      <p class="texto">Brunno Falcão é empresário, palestrante e autor best-seller dos livros ZONA DESCONFORTO e O Fim do Consultório, além de co-autor de Diariamente. CEO e fundador da Science Play, plataforma de educação em saúde para médicos e nutricionistas, lidera também os programas de mentoria e mastermind Palestre•se, Golden e A Mesa, além do evento Nutrição Brasil.</p>
+      <p class="texto pedra">É colunista da Forbes Portugal, Medicina S/A e O Fit Feed. Há 25 anos no setor de congressos, idealizou o projeto Arnold Conference. Referência em marketing digital, comunicação e posicionamento para profissionais da saúde, já ajudou milhares de médicos e nutricionistas a construírem autoridade e resultado real.</p>
+      <a class="btn linha sm" href="#contato" style="align-self:flex-start">Biografia e fotos oficiais</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MENTORIAS ═══ -->
+<section id="mentorias" class="secao borda">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="duas">
+      <div class="sec-head">
+        <span class="kicker">Mentorias e programas</span>
+        <h2 class="h2">Três portas. Um padrão: <em>referência.</em></h2>
+      </div>
+      <p class="lead" style="max-width:480px">Para médicas, médicos e nutricionistas que já são referência no consultório e ainda não são vistos por isso.</p>
+    </div>
+    <div class="cards3">
+      <a class="caixa card" href="http://www.palestre.se/?utm_source=site&amp;utm_medium=mentorias&amp;utm_campaign=palestrese" target="_blank" rel="noopener" data-track="site_palestrese">
+        <span class="kicker">Entrada · Imersão de 3 dias</span>
+        <div class="meio">
+          <h3 class="h3">Palestre•se</h3>
+          <p class="texto">Você já é bom. O mercado ainda não sabe. Em três dias você sai com uma palestra pronta, apresentada em um palco de verdade, diante de gente que decide. Não é curso de oratória. É o começo da sua autoridade com nome, tese e estrutura.</p>
+        </div>
+        <span class="link-cta">Ver próximas datas</span>
+      </a>
+      <a class="caixa card" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20Golden" target="_blank" rel="noopener" data-track="site_golden">
+        <span class="kicker">Grupo · Mastermind</span>
+        <div class="meio">
+          <h3 class="h3">Golden</h3>
+          <p class="texto">O mastermind de mentores da saúde. Para quem já lidera e quer liderar líderes: estratégia, posicionamento e uma rede que abre portas.</p>
+        </div>
+        <span class="link-cta">Falar no WhatsApp</span>
+      </a>
+      <a class="caixa card topo" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20A%20Mesa" target="_blank" rel="noopener" data-track="site_amesa">
+        <span class="kicker">Individual · Por convite</span>
+        <div class="meio">
+          <h3 class="h3">A Mesa</h3>
+          <p class="texto">Mentoria individual com Brunno Falcão. Poucas cadeiras por ano, acesso por convite ou consulta, para decisões que não cabem em grupo.</p>
+        </div>
+        <span class="link-cta">Solicitar uma conversa</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PALESTRAS ═══ -->
+<section id="palestras" class="secao">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="sec-head" style="max-width:760px">
+      <span class="kicker">Palestras</span>
+      <h2 class="h2">Ele não vai motivar. Vai mostrar uma fronteira <em>e o que fazer com ela.</em></h2>
+    </div>
+    <img class="foto-219" data-foto="palco" src="/assets/fotos/brunno-palco.jpg" alt="Brunno Falcão em palco" loading="lazy">
+    <div class="palestras">
+      <div class="temas col">
+        <h3>Temas</h3>
+        <div class="tema"><span class="n">01</span><div><span class="cat">Desconforto</span><span class="t">Zona Desconforto</span><span class="d">Coragem, decisão e o preço de crescer. Para equipes, lideranças e quem vive do próprio nome.</span></div></div>
+        <div class="tema"><span class="n">02</span><div><span class="cat">Comunicação</span><span class="t">Quem não se posiciona é posicionado</span><span class="d">Autoridade e posicionamento para quem tem conteúdo e ainda não é visto por isso.</span></div></div>
+        <div class="tema"><span class="n">03</span><div><span class="cat">Carreira</span><span class="t">O Fim do Consultório</span><span class="d">O novo modelo de negócio da saúde e quem vai liderá-lo.</span></div></div>
+        <div class="tema"><span class="n">04</span><div><span class="cat">Inovação</span><span class="t">HealthTech e a próxima década da saúde</span><span class="d">IA, dados e o que os bastidores da saúde global revelam sobre quem lidera e quem assiste.</span></div></div>
+        <div class="tema"><span class="n">05</span><div><span class="cat">Visão</span><span class="t">Visão antes do plano</span><span class="d">Como construir uma visão de futuro e tomar as decisões que levam até ela.</span></div></div>
+        <div class="tema"><span class="n">06</span><div><span class="cat">Marketing digital</span><span class="t">Influência que vira resultado</span><span class="d">Conteúdo, reputação e presença digital: de seguidores a pacientes, alunos e convites.</span></div></div>
+        <div class="tema"><span class="n">07</span><div><span class="cat">Comunicação</span><span class="t">O palco como alavanca</span><span class="d">Falar em público como estratégia de carreira, não como talento. 25 anos de palcos em uma hora.</span></div></div>
+        <div class="tema"><span class="n">08</span><div><span class="cat">Carreira</span><span class="t">Seu nome é o negócio</span><span class="d">Marca pessoal, valor do trabalho e as decisões que separam quem é contratado de quem é procurado.</span></div></div>
+      </div>
+      <div class="caixa contratantes">
+        <span class="kicker">Para contratantes</span>
+        <p class="h3">Congressos, convenções, sociedades médicas e eventos corporativos.</p>
+        <div class="formatos">
+          <div class="formato"><b>Keynote</b><span>60 a 90 min</span></div>
+          <div class="formato"><b>Workshop</b><span>meio período</span></div>
+          <div class="formato"><b>Painel e mediação</b><span>sob consulta</span></div>
+        </div>
+        <a class="btn branco" href="#contato" style="width:100%">Solicitar proposta</a>
+        <p class="nota" style="text-align:center">Envie data, cidade e perfil do público.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LIVROS ═══ -->
+<section id="livros" class="secao borda">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="sec-head">
+      <span class="kicker">Livros</span>
+      <h2 class="h2">Três livros. <em>Uma tese.</em></h2>
+    </div>
+    <a class="caixa livro-hl" href="https://a.co/d/09Bwao8V" target="_blank" rel="noopener" data-track="site_zona">
+      <div class="capa"><img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849405/ZONADESCONFORTO_khvq44.avif" alt="ZONA DESCONFORTO" loading="lazy"></div>
+      <div class="info">
+        <span class="kicker">Best-seller nº 1 · PublishNews</span>
+        <h3 class="titulo">Zona Desconforto</h3>
+        <p class="cita">Ninguém constrói sozinho. Mas alguém precisa ir primeiro.</p>
+        <div class="ranks">
+          <div class="rank"><b>#1</b><span>Autoajuda</span></div>
+          <div class="rank"><b>#6</b><span>Geral · PublishNews</span></div>
+          <div class="rank"><b>#7</b><span>Veja</span></div>
+        </div>
+        <span class="btn" style="align-self:flex-start">Comprar na Amazon</span>
+      </div>
+    </a>
+    <div class="livros2">
+      <a class="caixa livro" href="https://pay.hotmart.com/C86962425Q?checkoutMode=10&amp;utm_source=site&amp;utm_medium=livros&amp;utm_campaign=fim-consultorio" target="_blank" rel="noopener" data-track="site_fim_consultorio">
+        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849481/O_fim_do_consultorio_mos3jc.png" alt="O Fim do Consultório" loading="lazy">
+        <div class="info">
+          <h3 class="t">O Fim do Consultório</h3>
+          <p class="d">#1 Amazon · Categoria Medicina. O novo modelo de negócio da saúde.</p>
+          <span class="link-cta">Comprar</span>
+        </div>
+      </a>
+      <a class="caixa livro" href="https://sun.eduzz.com/2038359?utm_source=site&amp;utm_medium=livros&amp;utm_campaign=diariamente" target="_blank" rel="noopener" data-track="site_diariamente">
+        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775849309/Book-Mockup-diariamente2_f5jgmc.jpg" alt="Diariamente" loading="lazy">
+        <div class="info">
+          <h3 class="t">Diariamente</h3>
+          <p class="d">Co-autoria. O guia que maximiza seu potencial em poucos minutos por dia.</p>
+          <span class="link-cta">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EVENTOS ═══ -->
+<section id="eventos" class="secao">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="sec-head">
+      <span class="kicker">Eventos</span>
+      <h2 class="h2">Onde a referência <em>acontece ao vivo.</em></h2>
+    </div>
+    <div class="eventos">
+      <div id="hid" class="caixa topo hid">
+        <div class="data">
+          <span class="dia">04<br>Nov</span>
+          <div class="nome">
+            <span class="kicker">Próximo encontro · São Paulo · Gratuito</span>
+            <h3>Health Influence Day</h3>
+            <p class="cita">Sejamos nós os influenciadores. Não os influenciados.</p>
+          </div>
+        </div>
+        <div class="acao">
+          <p class="texto pedra">Quarta, 16h às 20h · Hotmart, Vila Madalena. Uma tarde sobre autoridade, posicionamento e crescimento digital na saúde, com Brunno Falcão e palestrantes convidados. Para médicas, médicos, nutricionistas e profissionais da saúde. Lugares limitados.</p>
+          <a class="btn" href="https://hid.scienceplay.com/?utm_source=site&amp;utm_medium=eventos&amp;utm_campaign=hid" target="_blank" rel="noopener" data-track="site_hid" style="align-self:flex-start">Quero minha vaga</a>
+        </div>
+      </div>
+      <a class="caixa nb" href="https://www.nutricaobrasil.com.br/?utm_source=site&amp;utm_medium=eventos&amp;utm_campaign=nutricao-brasil" target="_blank" rel="noopener" data-track="site_nutribrasil">
+        <div class="info">
+          <span class="kicker">Imersões presenciais · 2026 · 8 cidades</span>
+          <h3>Nutrição Brasil</h3>
+          <p class="texto pedra">Balneário Camboriú (SC), Belém (PA), Belo Horizonte (MG), Brasília (DF), Curitiba (PR), Goiânia (GO), Porto Alegre (RS) e Rio de Janeiro (RJ).</p>
+        </div>
+        <span class="link-cta">Escolher a sua cidade</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEPOIMENTOS (CONFIG.depoimentos) ═══ -->
+<section id="depoimentos" class="secao borda">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="sec-head">
+      <span class="kicker">Depoimentos</span>
+      <h2 class="h2">Quem passou <em>pela mesa.</em></h2>
+    </div>
+    <div class="depos">
+      <figure class="caixa depo">
+        <blockquote>Caminhar com o Brunno fortaleceu minha confiança para construir o novo com estratégia e autenticidade, alinhando meus talentos e meu propósito ao futuro que quero realizar.</blockquote>
+        <figcaption><a href="https://www.instagram.com/brunnaboaventura/" target="_blank" rel="noopener" data-track="site_depo_brunna"><b>Dra. Brunna Boaventura</b><span>Nutricionista · @brunnaboaventura</span></a></figcaption>
+      </figure>
+      <figure class="caixa depo">
+        <blockquote>Com o Brunno, aprendi a enxergar além do óbvio, compreender melhor o mercado e dar direção a tudo aquilo que eu já sonhava construir.</blockquote>
+        <figcaption><a href="https://www.instagram.com/draalinezago/" target="_blank" rel="noopener" data-track="site_depo_aline"><b>Dra. Aline Zago</b><span>Médica · @draalinezago</span></a></figcaption>
+      </figure>
+      <!-- Próximo depoimento: copie o bloco abaixo e preencha
+      <figure class="caixa depo">
+        <blockquote>TEXTO</blockquote>
+        <figcaption><a href="https://www.instagram.com/USUARIO/" target="_blank" rel="noopener" data-track="site_depo_nome"><b>Dra. Nome Sobrenome</b><span>Especialidade · @USUARIO</span></a></figcaption>
+      </figure>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ IMPRENSA ═══ -->
+<section id="imprensa" class="secao">
+  <div class="wrap duas-col">
+    <div class="col" style="gap:28px">
+      <div class="sec-head">
+        <span class="kicker">Imprensa e colunas</span>
+        <h2 class="h2">Colunista <em>e fonte.</em></h2>
+      </div>
+      <div class="lista">
+        <a class="coluna" href="https://www.forbespt.com" target="_blank" rel="noopener" data-track="site_forbes"><b>Forbes Portugal</b><span>Colunista</span></a>
+        <a class="coluna" href="https://medicinasa.com.br" target="_blank" rel="noopener" data-track="site_medicinasa"><b>Medicina S/A</b><span>Colunista</span></a>
+        <a class="coluna" href="https://ofitfeed.com.br" target="_blank" rel="noopener" data-track="site_ofitfeed"><b>O Fit Feed</b><span>Colunista</span></a>
+      </div>
+    </div>
+    <div class="caixa painel">
+      <span class="kicker">Pautas e entrevistas</span>
+      <p class="h3">Posicionamento na saúde, healthtech, infoprodutos para médicos e nutricionistas, o futuro do consultório.</p>
+      <p class="texto pedra">Biografia oficial, fotos em alta resolução e capas dos livros sob pedido.</p>
+      <a class="btn linha sm" href="#contato" style="align-self:flex-start">Solicitar kit de imprensa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ECOSSISTEMA ═══ -->
+<section id="ecossistema" class="secao borda">
+  <div class="wrap col" style="gap:clamp(40px,6vw,72px)">
+    <div class="duas">
+      <div class="sec-head">
+        <span class="kicker">Science Play e empresas</span>
+        <h2 class="h2">O <em>ecossistema.</em></h2>
+      </div>
+      <p class="lead" style="max-width:480px">Educação, eventos e comunidades que formam referências na saúde brasileira.</p>
+    </div>
+    <div class="ecos">
+      <a class="caixa eco" href="https://scienceplay.com" target="_blank" rel="noopener" data-track="site_scienceplay">
+        <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167674/Logo_SP_negativa_obkofh.png" alt="Science Play" loading="lazy">
+        <div class="fim"><span class="t">Science Play</span><span class="d">Educação em saúde · 95 países · CEO e fundador</span></div>
+      </a>
+      <a class="caixa eco" href="https://www.nutricaobrasil.com.br" target="_blank" rel="noopener" data-track="site_nb_eco">
+        <span class="kicker">Evento</span>
+        <div class="fim"><span class="t">Nutrição Brasil</span><span class="d">Imersões presenciais em 8 cidades</span></div>
+      </a>
+      <a class="caixa eco" href="#mentorias">
+        <span class="kicker">Mentorias</span>
+        <div class="fim"><span class="t">Palestre•se · Golden · A Mesa</span><span class="d">Entrada, grupo e individual</span></div>
+      </a>
+      <div class="caixa eco">
+        <span class="kicker">Projeto idealizado</span>
+        <div class="fim"><span class="t">Arnold Conference</span><span class="d">Projeto idealizado por Brunno Falcão</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTATO ═══ -->
+<section id="contato" class="secao">
+  <div class="wrap duas-col">
+    <div class="col" style="gap:28px">
+      <div class="sec-head">
+        <span class="kicker">Contato</span>
+        <h2 class="h2">Vamos <em>conversar.</em></h2>
+        <p class="lead" style="max-width:440px">Mentorias, palestras, imprensa e parcerias. Escolha o caminho mais rápido.</p>
+      </div>
+      <a class="caixa whats" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pelo%20site%20brunnofalcao.com.br" target="_blank" rel="noopener" data-track="site_whatsapp">
+        <b>WhatsApp da equipe</b>
+        <span>Resposta direta para mentorias e programas</span>
+      </a>
+      <div class="col" style="gap:10px">
+        <span class="kicker">Redes</span>
+        <div class="redes2">
+          <a href="https://www.instagram.com/brunnofalcao" target="_blank" rel="noopener">@brunnofalcao</a>
+          <a href="https://www.linkedin.com/in/brunnofalcao/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.youtube.com/@myscienceplay" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <form id="form-contato" class="caixa contato" name="contato" method="POST" novalidate>
+      <div class="g2">
+        <label>Nome<input name="nome" type="text" required autocomplete="name" placeholder="Seu nome"></label>
+        <label>WhatsApp<input name="whatsapp" type="tel" autocomplete="tel" placeholder="(61) 9 0000-0000"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" required autocomplete="email" placeholder="voce@exemplo.com"></label>
+      <label>Interesse<select name="interesse">
+        <option value="Mentoria (Golden ou A Mesa)">Mentoria (Golden ou A Mesa)</option>
+        <option value="Palestre•se">Palestre•se</option>
+        <option value="Palestra ou workshop">Palestra ou workshop</option>
+        <option value="Imprensa">Imprensa</option>
+        <option value="Parcerias e patrocínio">Parcerias e patrocínio</option>
+      </select></label>
+      <label>Mensagem<textarea name="mensagem" rows="4" placeholder="Conte em poucas linhas o que precisa. Se for palestra: data, cidade e público."></textarea></label>
+      <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" data-track="site_form">Enviar</button>
+      <p class="nota" style="text-align:center">Seus dados são usados apenas para responder a esta mensagem.</p>
+    </form>
+
+    <div id="recebido" class="caixa topo recebido" hidden>
+      <span class="kicker">Recebido</span>
+      <p class="grande">Obrigado. A equipe retorna em breve.</p>
+      <p class="texto pedra">Se preferir agilizar, chame no WhatsApp.</p>
+      <a class="btn linha sm" href="https://wa.me/5561994502691?text=Ol%C3%A1%2C%20acabei%20de%20enviar%20o%20formul%C3%A1rio%20do%20site" target="_blank" rel="noopener" style="align-self:flex-start">Abrir WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="wrap">
+    <div class="topo">
+      <div class="marca">
+        <img src="/assets/b2n/Logo_B2N_8_monograma_nome_negativo.png" alt="B2N · Brunno Falcão">
+        <span>Movimento que constrói.</span>
+      </div>
+      <div class="menu">
+        <a href="#sobre">Sobre</a><a href="#mentorias">Mentorias</a><a href="#palestras">Palestras</a><a href="#livros">Livros</a><a href="#eventos">Eventos</a><a href="#imprensa">Imprensa</a><a class="bio" href="/bio">/bio</a>
+      </div>
+    </div>
+    <div class="base">
+      <span class="nota">© <span id="ano">2026</span> B2N · Brunno Falcão · brunnofalcao.com.br</span>
+      <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775167674/Logo_SP_negativa_obkofh.png" alt="Science Play" loading="lazy">
+    </div>
+  </div>
+</footer>
 
 <script>
   /* ── CONFIG · edite aqui ───────────────────────────────────────
-     estadoEvento   : 'inscricoes' | 'esgotado' | 'encerrado'
-                      esgotado = vira lista de espera · encerrado = some o bloco
-     mostrarContagem: true/false · "Faltam X dias"
-     mostrarAulas   : true/false · seção Aulas disponíveis
-     dataEvento     : data e hora do evento (fuso de Brasília)
+     eventBanner : true/false · faixa do Health Influence Day no topo
+     heroCta     : 'mentorias' | 'palestras' · ordem dos botões do herói
+     depoimentos : true quando os 3 depoimentos reais estiverem no HTML
+     fotos       : caminho de cada foto em /assets/fotos/. Enquanto o
+                   arquivo não existir, o espaço fica preto (sem quebra).
+     formEndpoint: envia por e-mail via FormSubmit (sem cadastro; o 1º
+                   envio manda um e-mail de ativação para o endereço).
+                   Se o envio falhar, abre o WhatsApp da equipe com os
+                   dados preenchidos. '' = só WhatsApp.
+     whatsapp    : número da equipe, só dígitos com DDI
   ---------------------------------------------------------------- */
   const CONFIG = {
-    estadoEvento: 'inscricoes',
-    mostrarContagem: true,
-    mostrarAulas: true,
-    dataEvento: '2026-11-04T16:00:00-03:00'
+    eventBanner: true,
+    heroCta: 'mentorias',
+    depoimentos: true,
+    fotos: {
+      hero: '/assets/fotos/brunno-hero.jpg',
+      sobre: '/assets/fotos/brunno-sobre.jpg',
+      palco: '/assets/fotos/brunno-palco.jpg'
+    },
+    formEndpoint: 'https://formsubmit.co/ajax/contato@scienceplay.com',
+    whatsapp: '5561994502691'
   };
 
   (function () {
-    const evento = document.getElementById('evento');
-    if (CONFIG.estadoEvento === 'encerrado') { evento.hidden = true; }
-    else {
-      document.querySelectorAll('[data-estado]').forEach(el => { el.hidden = el.dataset.estado !== CONFIG.estadoEvento; });
-      const alvo = new Date(CONFIG.dataEvento).getTime();
-      const tick = () => {
-        const dias = Math.max(0, Math.ceil((alvo - Date.now()) / 864e5));
-        document.getElementById('dias').textContent = dias;
-        document.getElementById('contagem').hidden = !(CONFIG.mostrarContagem && dias > 0);
-      };
-      tick(); setInterval(tick, 60000);
-    }
-    document.getElementById('aulas').hidden = !CONFIG.mostrarAulas;
+    const $ = s => document.querySelector(s);
+    $('#faixa').hidden = !CONFIG.eventBanner;
+    document.querySelectorAll('[data-cta]').forEach(el => { el.hidden = el.dataset.cta !== CONFIG.heroCta; });
+    $('#depoimentos').hidden = !CONFIG.depoimentos;
+    document.querySelectorAll('[data-foto]').forEach(img => {
+      const url = CONFIG.fotos[img.dataset.foto] || '';
+      img.onerror = () => { img.hidden = true; };
+      if (url) { img.src = url; } else { img.hidden = true; }
+    });
+    $('#ano').textContent = new Date().getFullYear();
 
-    /* tracking · BioClick no Pixel e bio_click no GA4, se instalados */
+    /* tracking · dispara nos dois, se instalados */
     document.addEventListener('click', e => {
       const el = e.target.closest('[data-track]'); if (!el) return;
       const link = el.getAttribute('data-track');
-      if (window.fbq) window.fbq('trackCustom', 'BioClick', { link });
-      if (window.gtag) window.gtag('event', 'bio_click', { link });
+      if (window.fbq) window.fbq('trackCustom', 'SiteClick', { link });
+      if (window.gtag) window.gtag('event', 'site_click', { link });
+    });
+
+    /* formulário */
+    const form = $('#form-contato'), ok = $('#recebido');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const f = Object.fromEntries(new FormData(form).entries());
+      if (f._honey) return;
+      const btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Enviando';
+      const porWhats = () => {
+        const txt = ['Olá, vim pelo site brunnofalcao.com.br', 'Nome: ' + f.nome, 'E-mail: ' + f.email, f.whatsapp ? 'WhatsApp: ' + f.whatsapp : '', 'Interesse: ' + f.interesse, f.mensagem ? 'Mensagem: ' + f.mensagem : ''].filter(Boolean).join('\n');
+        window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(txt), '_blank', 'noopener');
+      };
+      let enviado = false;
+      if (CONFIG.formEndpoint) {
+        try {
+          const r = await fetch(CONFIG.formEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ nome: f.nome, whatsapp: f.whatsapp, email: f.email, interesse: f.interesse, mensagem: f.mensagem, _subject: 'Site · ' + f.interesse + ' · ' + f.nome, _replyto: f.email, _template: 'table' })
+          });
+          const j = await r.json().catch(() => ({}));
+          enviado = r.ok && String(j.success) !== 'false';
+        } catch (err) { enviado = false; }
+      }
+      if (!enviado) porWhats();
+      if (window.fbq) window.fbq('track', 'Lead', { interesse: f.interesse });
+      if (window.gtag) window.gtag('event', 'generate_lead', { interesse: f.interesse });
+      form.hidden = true; ok.hidden = false;
     });
   })();
 </script>
