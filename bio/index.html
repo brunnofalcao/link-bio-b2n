@@ -12,7 +12,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Brunno Falcão">
 <meta property="og:title" content="Brunno Falcão · Links">
-<meta property="og:description" content="Health Influence Day 04/11, ZONA DESCONFORTO, aulas, mentorias e eventos. Tudo em um lugar.">
+<meta property="og:description" content="Palestre•se Elite, ZONA DESCONFORTO, aulas, mentorias e eventos. Tudo em um lugar.">
 <meta property="og:url" content="https://www.brunnofalcao.com.br/bio">
 <meta property="og:image" content="https://www.brunnofalcao.com.br/assets/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -27,7 +27,7 @@
 <!-- GTM / Meta Pixel / GA4: cole o snippet do <head> aqui -->
 <style>
   :root{
-    --preto:#000;--grafite:#1A1A1A;--ouro:#D4C89C;--bronze:#A8905A;--off:#F0F0F0;--pedra:#B8B8B8;
+    --preto:#000;--grafite:#1A1A1A;--ouro:#D4C89C;--ouro-prof:#C4A962;--bronze:#A8905A;--off:#F0F0F0;--pedra:#B8B8B8;
     --linha:rgba(212,200,156,.18);--linha-f:rgba(212,200,156,.42);
     --oswald:Oswald,'Arial Narrow',Impact,sans-serif;--sans:'DM Sans',Arial,Helvetica,sans-serif;
     --serif:'Cormorant Garamond',Georgia,serif;--mono:'SF Mono',Menlo,Consolas,monospace;
@@ -86,19 +86,16 @@
 
   .conteudo{padding:16px 22px 40px;display:flex;flex-direction:column;gap:28px}
 
-  /* ── ingresso do evento ── */
-  .ingresso{display:grid;grid-template-columns:96px minmax(0,1fr);background:var(--grafite);border:1px solid var(--linha);border-top:2px solid var(--ouro)}
-  .ingresso .data{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:22px 8px;border-right:1px dashed var(--linha-f)}
-  .ingresso .dia{font-family:var(--oswald);font-size:60px;line-height:.9;font-weight:600;color:var(--ouro)}
-  .ingresso .mes{font-family:var(--oswald);font-size:14px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#fff}
-  .ingresso .hora{font-size:12.5px;color:var(--pedra);margin-top:6px}
-  .ingresso .corpo{padding:20px 18px 18px;display:flex;flex-direction:column;gap:10px}
-  .ingresso .linha1{display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .ingresso h2{font-family:var(--oswald);font-size:26px;line-height:1.05;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:#fff}
-  .ingresso .cita{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;line-height:1.3;color:var(--off)}
-  .ingresso .contagem{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--pedra);font-weight:700}
-  .ingresso .contagem b{color:var(--ouro);font-weight:700}
-  .ingresso .btn{margin-top:6px}
+  /* ── elite · bloco principal ── */
+  .elite{display:flex;flex-direction:column;gap:12px;padding:22px 20px 20px;background:var(--grafite);border:1px solid var(--linha);border-top:2px solid var(--ouro)}
+  .elite h2{font-family:var(--oswald);font-size:30px;line-height:1;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:#fff}
+  .elite h2 em{font-style:normal;color:var(--ouro-prof)}
+  .elite .cita{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;line-height:1.3;color:var(--off)}
+  .elite .pontos{display:flex;flex-direction:column;border-top:1px solid var(--linha);margin-top:2px}
+  .elite .ponto{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--linha)}
+  .elite .ponto .n{font-family:var(--mono);font-size:10px;letter-spacing:.18em;font-weight:700;color:var(--ouro)}
+  .elite .ponto .p{font-size:14px;line-height:1.4;color:var(--off)}
+  .elite .btn{margin-top:6px}
 
   /* ── livro ── */
   .zona{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:center;padding:18px}
@@ -186,27 +183,18 @@
 
   <div class="conteudo">
 
-    <!-- ═══ HEALTH INFLUENCE DAY · 04/11 (CONFIG.estadoEvento) ═══ -->
-    <section id="evento" class="ingresso">
-      <div class="data">
-        <span class="kicker pedra">Quarta</span>
-        <span class="dia">04</span>
-        <span class="mes">Nov</span>
-        <span class="hora">16h às 20h</span>
+    <!-- ═══ PALESTRE•SE ELITE · bloco principal (CONFIG.linkElite) ═══ -->
+    <section id="elite" class="elite">
+      <span class="kicker">O próximo nível do Palestre•se</span>
+      <h2>Palestre•se <em>Elite</em></h2>
+      <p class="cita">O palco é o começo. A autoridade é o que vem depois.</p>
+      <p class="desc">Para médicas, médicos e nutricionistas que já subiram ao palco.</p>
+      <div class="pontos">
+        <div class="ponto"><span class="n">01</span><span class="p">Tese e posicionamento próprios</span></div>
+        <div class="ponto"><span class="n">02</span><span class="p">Palco, método e presença</span></div>
+        <div class="ponto"><span class="n">03</span><span class="p">Autoridade que gera convite e negócio</span></div>
       </div>
-      <div class="corpo">
-        <div class="linha1">
-          <span class="kicker" style="white-space:nowrap">Próximo encontro</span>
-          <span class="pill" data-estado="inscricoes">Gratuito</span>
-          <span class="pill" data-estado="esgotado" hidden>Esgotado</span>
-        </div>
-        <h2>Health Influence Day</h2>
-        <p class="cita">Sejamos nós os influenciadores. Não os influenciados.</p>
-        <p class="desc">Hotmart, Vila Madalena · autoridade e crescimento digital na saúde · lugares limitados</p>
-        <span id="contagem" class="contagem" hidden>Faltam <b id="dias">0</b> dias</span>
-        <a class="btn" data-estado="inscricoes" href="https://hid.scienceplay.com/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=hid" target="_blank" rel="noopener" data-track="hid">Quero minha vaga</a>
-        <a class="btn linha" data-estado="esgotado" hidden href="https://hid.scienceplay.com/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=hid-espera" target="_blank" rel="noopener" data-track="hid-espera">Entrar na lista de espera</a>
-      </div>
+      <a class="btn" id="cta-elite" href="#" target="_blank" rel="noopener" data-track="palestrese-elite">Quero saber mais</a>
     </section>
 
     <!-- ═══ LIVRO ═══ -->
@@ -223,9 +211,13 @@
       </a>
     </section>
 
-    <!-- ═══ AULAS (CONFIG.mostrarAulas) ═══ -->
+    <!-- ═══ AULAS (CONFIG.mostrarAulas · CONFIG.aulaHID) ═══ -->
     <section id="aulas" class="sec">
       <h3>Aulas disponíveis</h3>
+      <a class="caixa aula" id="aula-hid" href="#" target="_blank" rel="noopener" data-track="aula-hid">
+        <div class="preco"><s id="hid-de" hidden></s><b id="hid-por">Ver</b></div>
+        <div class="info"><b>Health Influence Day</b><span>Gravação completa · autoridade e crescimento digital na saúde</span></div>
+      </a>
       <a class="caixa aula" href="https://pay.hotmart.com/V104619109H?off=rvnr0ax8&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=aula-healthtech" target="_blank" rel="noopener" data-track="aula-healthtech">
         <div class="preco"><s>R$ 147</s><b>R$ 77</b></div>
         <div class="info"><b>HealthTech 2026: como lucrar com a nova saúde</b><span>Aula + ebook + relatórios · Suíça</span></div>
@@ -268,10 +260,10 @@
     <!-- ═══ EVENTOS E LIVROS ═══ -->
     <section class="sec">
       <h3>Eventos e livros</h3>
-      <a class="caixa nb" href="https://www.nutricaobrasil.com.br/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=nutricao-brasil" target="_blank" rel="noopener" data-track="nutricao-brasil">
+      <a class="caixa nb" id="nb" href="https://www.nutricaobrasil.com.br/" target="_blank" rel="noopener" data-track="nutricao-brasil">
         <img src="https://res.cloudinary.com/dlzrfhwin/image/upload/v1775828899/IDV_Nutri%C3%A7%C3%A3o_Brasil_2026_uz4gbm.png" alt="Nutrição Brasil" loading="lazy">
         <div class="info">
-          <span class="t-oswald t">Nutrição Brasil 2026</span>
+          <span class="t-oswald t" id="nb-titulo">Nutrição Brasil</span>
           <span class="desc">Balneário Camboriú · Belém · Belo Horizonte · Brasília · Curitiba · Goiânia · Porto Alegre · Rio de Janeiro</span>
         </div>
       </a>
@@ -304,33 +296,42 @@
 
 <script>
   /* ── CONFIG · edite aqui ───────────────────────────────────────
-     estadoEvento   : 'inscricoes' | 'esgotado' | 'encerrado'
-                      esgotado = vira lista de espera · encerrado = some o bloco
-     mostrarContagem: true/false · "Faltam X dias"
-     mostrarAulas   : true/false · seção Aulas disponíveis
-     dataEvento     : data e hora do evento (fuso de Brasília)
+     linkElite        : destino do botão do Palestre•se Elite.
+                        Hoje vai para o WhatsApp da equipe; troque pela
+                        página de vendas quando ela existir.
+     aulaHID          : aula do Health Influence Day.
+                        link   = checkout (hoje: página do HID)
+                        precoDe/preco = ex. 'R$ 197' e 'R$ 97'.
+                        Com preco vazio, o selo mostra 'Ver'.
+     mostrarAulas     : true/false · seção Aulas disponíveis
+     anoNutricaoBrasil: ano no título e na UTM do Nutrição Brasil
   ---------------------------------------------------------------- */
   const CONFIG = {
-    estadoEvento: 'inscricoes',
-    mostrarContagem: true,
+    linkElite: 'https://wa.me/5561994502691?text=Ol%C3%A1%2C%20vim%20pela%20bio%20do%20Instagram%20e%20quero%20saber%20mais%20sobre%20o%20Palestre%E2%80%A2se%20Elite',
+    aulaHID: {
+      link: 'https://hid.scienceplay.com/?utm_source=instagram&utm_medium=bio&utm_campaign=aula-hid',
+      precoDe: '',
+      preco: ''
+    },
     mostrarAulas: true,
-    dataEvento: '2026-11-04T16:00:00-03:00'
+    anoNutricaoBrasil: 2027
   };
 
   (function () {
-    const evento = document.getElementById('evento');
-    if (CONFIG.estadoEvento === 'encerrado') { evento.hidden = true; }
-    else {
-      document.querySelectorAll('[data-estado]').forEach(el => { el.hidden = el.dataset.estado !== CONFIG.estadoEvento; });
-      const alvo = new Date(CONFIG.dataEvento).getTime();
-      const tick = () => {
-        const dias = Math.max(0, Math.ceil((alvo - Date.now()) / 864e5));
-        document.getElementById('dias').textContent = dias;
-        document.getElementById('contagem').hidden = !(CONFIG.mostrarContagem && dias > 0);
-      };
-      tick(); setInterval(tick, 60000);
+    const $ = id => document.getElementById(id);
+
+    $('cta-elite').href = CONFIG.linkElite;
+
+    $('aulas').hidden = !CONFIG.mostrarAulas;
+    $('aula-hid').href = CONFIG.aulaHID.link;
+    if (CONFIG.aulaHID.preco) {
+      $('hid-por').textContent = CONFIG.aulaHID.preco;
+      if (CONFIG.aulaHID.precoDe) { $('hid-de').textContent = CONFIG.aulaHID.precoDe; $('hid-de').hidden = false; }
     }
-    document.getElementById('aulas').hidden = !CONFIG.mostrarAulas;
+
+    const ano = CONFIG.anoNutricaoBrasil;
+    $('nb-titulo').textContent = 'Nutrição Brasil ' + ano;
+    $('nb').href = 'https://www.nutricaobrasil.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=nutricao-brasil-' + ano;
 
     /* tracking · BioClick no Pixel e bio_click no GA4, se instalados */
     document.addEventListener('click', e => {
